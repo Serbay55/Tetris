@@ -1,6 +1,10 @@
 package ui;
 
+import java.awt.event.KeyListener;
+
 import javax.swing.JFrame;
+
+import io.KeyHandler;
 
 public class Gui {
 	
@@ -15,6 +19,7 @@ public class Gui {
 		jf.setLocationRelativeTo(null);
 		jf.setResizable(false);
 		jf.setLayout(null);
+		jf.addKeyListener((KeyListener) new KeyHandler());
 		jf.requestFocus();
 	}
 
