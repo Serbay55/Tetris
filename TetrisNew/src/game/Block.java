@@ -11,6 +11,13 @@ public class Block {
 	
 	public Block() {
 		type = BlockType.random();
+		switch (type) {
+		case I:
+			size = 4;
+			break;
+		case O:
+			size = 2;
 		
+		}
 	}
 }
