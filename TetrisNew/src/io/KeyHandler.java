@@ -3,19 +3,19 @@ package io;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class KeyHandler {
+public class KeyHandler implements KeyListener {
 
-	@Override
+	//@Override
 	public void keyTyped(KeyEvent e) {
 		
 	}
 	
-	@Override
+	//@Override
 	public void keyPressed(KeyEvent e) {
 		
 	}
 	
-	@Override
+	//@Override
 	public void keyReleased(KeyEvent e) {
 		
 	}
