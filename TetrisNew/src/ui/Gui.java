@@ -2,6 +2,7 @@ package ui;
 
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 import io.KeyHandler;
 
@@ -18,8 +19,20 @@ public class Gui {
 		jf.setLocationRelativeTo(null);
 		jf.setResizable(false);
 		jf.setLayout(null);
-		jf.requestFocus();
 		jf.addKeyListener(new KeyHandler());
+		jf.requestFocus();
+		
+		jf.setVisible(true);
+		
+		DrawGame dg = new DrawGame();
+		setupDraw(dg, 0, 0, width+1, height+1 );
+	}
+	
+	private void setupDraw(JLabel draw, int x, int y, int width, int height) {
+		draw.setBounds(x, y, width, height);
+		draw.setVisible(true);
+		jf.add(draw);
+		
 	}
 
 }
