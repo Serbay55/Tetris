@@ -26,6 +26,10 @@ public class Gui {
 		
 		DrawGame dg = new DrawGame();
 		setupDraw(dg, 0, 0, width+1, height+1 );
+		
+		DrawInterface di = new DrawInterface();
+		setupDraw(di, width+1, 1, width, height);
+		
 	}
 	
 	private void setupDraw(JLabel draw, int x, int y, int width, int height) {
