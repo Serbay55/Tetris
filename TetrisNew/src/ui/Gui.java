@@ -8,7 +8,7 @@ import io.KeyHandler;
 
 public class Gui {
 	
-	public static int width = 320, height = 576;
+	public static int width = 320, height = 650;
 	
 	JFrame jf;
 	
