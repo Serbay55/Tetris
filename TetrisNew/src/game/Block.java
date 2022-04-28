@@ -17,6 +17,26 @@ public class Block {
 			break;
 		case O:
 			size = 2;
+			break;
+		default:
+			size = 3;
+			break;
+		
+		}
+		
+		switch(type) {
+		case I: 
+			color = Color.CYAN;
+			break;
+		case O:
+			color = Color.MAGENTA;
+			break;
+		case T:
+			color = Color.blue;
+			break;
+		case L:
+			color = Color.YELLOW;
+			break;
 		
 		}
 	}
