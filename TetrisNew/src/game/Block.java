@@ -85,7 +85,7 @@ public class Block {
 		File file = new File("fes/blocks/"+type+".txt"); // reads the txt files from our resource folder of our block types
 		Scanner sc = new Scanner(file); // this should scan the content of our files
 		
-		for(int variante = 0; variante < 4; variante++) {
+		for(int type1 = 0; type1 < 4; type1++) {
 			for(int i = 0; i < bounds[0].length; i++) { //bounds[0] because we want to know how big the tetris block we want to read is
 				if(sc.hasNext()) { // is there text left to be read
 					String[] srow = sc.next().split(""); // we save the lines into the string array and split them with a space
@@ -93,7 +93,7 @@ public class Block {
 					
 					for(int j = 0; j<row.length; j++) {
 						row[j] = Integer.valueOf(srow[j]);
-						bounds[variante][j][i] = row[j];
+						bounds[type1][j][i] = row[j];
 					}					
 				}
 			}

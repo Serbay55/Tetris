@@ -9,7 +9,7 @@ public class Game {
 	public static ArrayList<Block> blocks = new ArrayList<Block>(); // soll eindimensional blöcke enthalten
 	public static Block currentBlock, nextBlock; // currentBlock soll gezeichnet werden und nextblock soll oben rechts auf dem Bildschirm gezeichnet werden.
 	
-	public static int[][] map = new int[10][18]; // <-- macht collision detection einfacher
+	public static int[][] map = new int[10][20]; // <-- macht collision detection einfacher
 	
 	public static GameState gamestate = GameState.start;
 	
