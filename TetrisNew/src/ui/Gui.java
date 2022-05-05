@@ -23,13 +23,14 @@ public class Gui {
 		jf.addKeyListener(new KeyHandler());
 		jf.requestFocus();
 		JButton button1=new JButton("Start");   
-		button1.setBounds(360,130,120,30);
+		button1.setBounds(360,160,120,30);
 	    jf.add(button1);  
 	    JButton button2=new JButton("Stop");   
-	    button2.setBounds(360,170,120,30);
+	    button2.setBounds(360,220,120,30);
 	    jf.add(button2);  
 	    JButton button3=new JButton("Neustart");   
-	    button3.setBounds(360,210,120,30);
+	    button3.setBounds(360,280,120,30);
+
 	    jf.add(button3);  
 		
 		jf.setVisible(true);
