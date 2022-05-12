@@ -29,7 +29,6 @@ public class KeyHandler implements KeyListener {
 			}
 			if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
 				Game.currentBlock.setX(Game.currentBlock.getX()+1);
-				System.out.println("right");
 			}
 			if(e.getKeyCode() == KeyEvent.VK_LEFT) {
 				Game.currentBlock.setX(Game.currentBlock.getX()-1);
