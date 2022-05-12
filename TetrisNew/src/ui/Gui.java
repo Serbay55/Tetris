@@ -15,6 +15,7 @@ public class Gui {
 	
 	public void create() {
 		jf = new JFrame();
+		jf.setTitle("Tetris");
 		jf.setSize(width + 17 + 200, height + 41);
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jf.setLocationRelativeTo(null);
