@@ -23,7 +23,7 @@ public class Gui {
 		jf.setLayout(null);
 		jf.addKeyListener(new KeyHandler());
 		jf.requestFocus();
-		JButton button1=new JButton("Start");   
+		/*JButton button1=new JButton("Start");
 		button1.setBounds(360,160,120,30);
 	    jf.add(button1);  
 	    JButton button2=new JButton("Stop");   
@@ -31,9 +31,8 @@ public class Gui {
 	    jf.add(button2);  
 	    JButton button3=new JButton("Neustart");   
 	    button3.setBounds(360,280,120,30);
-
 	    jf.add(button3);  
-		
+		*/
 		jf.setVisible(true);
 		
 		DrawGame dg = new DrawGame();
