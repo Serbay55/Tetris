@@ -13,9 +13,11 @@ public class Main {
     	
         Gui gui = new Gui();
         gui.create();
+        
+        laufstart();
     }
     
-    public static void startLoo() {
+    public static void laufstart() {
     	GameLoop loop = new GameLoop();
     	loop.start();
     }

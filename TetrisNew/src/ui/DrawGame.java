@@ -17,9 +17,13 @@ public class DrawGame extends JLabel {
 		
 		g.setColor(Game.currentBlock.getColor());
 		for(int i = 0; i < Game.currentBlock.getBounds()[Game.currentBlock.getRotation()].length; i++) {
+			
 			for(int j = 0; j < Game.currentBlock.getBounds()[Game.currentBlock.getRotation()][i].length; j++) {
+				
 				if(Game.currentBlock.getBounds()[Game.currentBlock.getRotation()][i][j] == 1){
+					
 					g.fillRect(conversion.cellToCoord(Game.currentBlock.getX()+i),
+							
 							conversion.cellToCoord(Game.currentBlock.getY()+j), 32, 32);
 				}
 			}

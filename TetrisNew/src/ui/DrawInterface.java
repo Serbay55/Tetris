@@ -17,7 +17,7 @@ public class DrawInterface extends JLabel {
 		for(int i = 0; i < Game.nextBlock.getBounds()[Game.nextBlock.getRotation()].length; i++) {
 			for(int j = 0; j < Game.nextBlock.getBounds()[Game.nextBlock.getRotation()][i].length; j++) {
 				if(Game.nextBlock.getBounds()[Game.nextBlock.getRotation()][i][j] == 1){
-					g.fillRect(conversion.cellToCoord(Game.nextBlock.getX()+i),
+					g.fillRect(conversion.cellToCoord(1+i),
 							conversion.cellToCoord(Game.nextBlock.getY()+j), 32, 32);
 				}
 			}
