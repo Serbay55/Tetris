@@ -22,7 +22,7 @@ public class GameLoop extends Thread {
 					}
 					
 				if(!Game.speedup) {
-					sleep(1000);
+					sleep(500);
 					
 				} else {
 					sleep(100);

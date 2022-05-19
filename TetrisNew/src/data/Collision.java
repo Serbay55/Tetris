@@ -24,7 +24,7 @@ public class Collision {
 		
 		break;
 		case 0:
-			if(b.getY() + b.getSize() > 1 && b.getY() +b.getSize() < 17) {
+			if(b.getY() + b.getSize() > 1 && b.getY() - b.getSize() < 17) {
 				// wir müssen innerhalb des Spielfeldes sein
 				for(int i = 0; i< b.getBounds()[b.getRotation()].length; i++) {
 					for(int j = 0; j< b.getBounds()[b.getRotation()][i].length;j++) {

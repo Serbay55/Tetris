@@ -36,6 +36,10 @@ public class KeyHandler implements KeyListener {
 			if(e.getKeyCode() == KeyEvent.VK_ESCAPE) {
 				Game.gamestate = GameState.pause;
 			}
+			if(e.getKeyCode() == KeyEvent.VK_F1) {
+				Game.spawnNewBlock = true;
+				Game.speedup = false;
+			}
 		} else if(Game.gamestate == GameState.pause) {
 			if(e.getKeyCode() == KeyEvent.VK_ESCAPE) {
 				Game.gamestate = GameState.ingame;
