@@ -1,5 +1,6 @@
 package mainpackage;
 
+import data.Collision;
 import game.Block;
 import game.Game;
 import game.GameState;
@@ -11,8 +12,12 @@ public class GameLoop extends Thread {
 		while(running) {
 			try {
 				if(Game.gamestate == GameState.start) {
-					
-					Game.currentBlock.setY(Game.currentBlock.getY()+1);
+
+					if(!Collision.collideWithWall(Game.currentBlock, 0) && !Collision.collideWithBlock(Game.currentBlock,0)){
+						Game.currentBlock.setY(Game.currentBlock.getY()+1);
+						//Collision.collideWithWall(Game.currentBlock, 0);
+					}
+
 					
 					if(Game.spawnNewBlock){
 						Game.blocks.add(Game.nextBlock);
